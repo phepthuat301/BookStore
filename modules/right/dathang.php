@@ -8,13 +8,13 @@ if(isset($_SESSION['product'])){
     echo '<div class="box_giohang">';
     echo '  <table width="100%" border="1" style="border-collapse:collapse; margin:5px; text-align:center;">';
     echo'  <tr>';
-    echo '<td>MÃ SP</td>';
-    echo'<td>Tên SP</td>';
-    echo'<td>Hình ảnh</td>';
-    echo'<td>Giá sp</td>';
-    echo'<td>SL</td>';
-    echo'<td>Tổng tiền</td>';
-    echo'<td>Quản lý</td>';
+    echo '<th>MÃ SP</th>';
+    echo'<th>Tên SP</th>';
+    echo'<th>Hình ảnh</th>';
+    echo'<th>Giá sp</th>';
+    echo'<th>SL</th>';
+    echo'<th>Tổng tiền</th>';
+    echo'<th>Quản lý</th>';
     echo'</tr>';
     $thanhtien=0;
     foreach($_SESSION['product'] as $cart_item){

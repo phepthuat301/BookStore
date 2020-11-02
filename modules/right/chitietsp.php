@@ -12,7 +12,7 @@ if(isset($_POST['add_to_cart'])){
     if($dong){
         $new_product=array(array('tensp'=>$dong['tensp'],'id'=>$id,'soluong'=>$soluong,'gia'=>$dong['giadexuat']));
         if(isset($_SESSION['product'])){
-            $found=true;
+            $found=false;
             foreach($_SESSION['product'] as $cart_item){
                 if($cart_item['id'] == $id){
                     $product[]=array('tensp'=>$cart_item['tensp'],'id'=>$cart_item['id'],'soluong'=>$soluong,'gia'=>$cart_item['gia']);
@@ -21,7 +21,7 @@ if(isset($_POST['add_to_cart'])){
                     $product[]=array('tensp'=>$cart_item['tensp'],'id'=>$cart_item['id'],'soluong'=>$cart_item['soluong'],'gia'=>$cart_item['gia']);
                 }
 
-            }if($found==true){
+            }if($found==false){
                 $_SESSION['product']=array_merge($product,$new_product);
             }else{
                 $_SESSION['product']=$product;

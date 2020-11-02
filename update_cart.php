@@ -31,13 +31,17 @@ include('admincp/modules/config.php');
 	if(isset($_GET['cong'])){
 		$id=$_GET['cong'];
 		foreach($_SESSION['product'] as $cart_item){
+
 			if($id!=$cart_item['id']){
 				
 				$product[]=array('tensp'=>$cart_item['tensp'],'id'=>$cart_item['id'],'soluong'=>$cart_item['soluong'],'gia'=>$cart_item['gia']);
 				$_SESSION['product']=$product;
 			}else{
+				$sql="select * from sanpham where id_sp='$id' limit 1";
+				$row=mysqli_query($conn,$sql);
+				$result=mysqli_fetch_array($row);
 				$tang=$cart_item['soluong']+1;
-				if($cart_item['soluong']<99999999){
+				if($cart_item['soluong']<$result['soluong']){
 				
 				$product[]=array('tensp'=>$cart_item['tensp'],'id'=>$cart_item['id'],'soluong'=>$tang,'gia'=>$cart_item['gia']);
 				

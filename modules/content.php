@@ -14,6 +14,8 @@
 					include('modules/right/chitietsp.php');
 				}elseif($tam == 'loaisp'){
 					include('modules/right/loaisp.php');
+                }elseif($tam == 'taikhoan'){
+                    include('modules/right/taikhoan.php');
 				}elseif($tam == 'hieusp'){
                 	include('modules/right/hieusp.php');
                 }elseif($tam == 'dathang'){
@@ -30,9 +32,9 @@
                 elseif($tam == 'tintuc'){
                     include('chuacode.php');
                 }
-            elseif($tam == 'thanhtoan'){
-                include('thanhtoan.php');
-            }
+                elseif($tam == 'thanhtoan'){
+                    include('thanhtoan.php');
+                }
 				else{
 					include('modules/right/spmoi.php');
 				}

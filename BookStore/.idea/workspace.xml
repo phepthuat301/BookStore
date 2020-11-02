@@ -10,9 +10,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a6c92a2-46b6-42f1-bfec-cdb8bf850220" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/modules/right/taikhoan.php" afterDir="false" />
-    </list>
+    <list default="true" id="5a6c92a2-46b6-42f1-bfec-cdb8bf850220" name="Default" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,8 +50,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../BookStore2" />
-    <property name="settings.editor.selected.configurable" value="web.server" />
-    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -143,8 +140,7 @@
       <workItem from="1602808688609" duration="326000" />
       <workItem from="1602809073342" duration="48000" />
       <workItem from="1603331013640" duration="781000" />
-      <workItem from="1604291723671" duration="11124000" />
-      <workItem from="1604307120112" duration="6823000" />
+      <workItem from="1604291723671" duration="12013000" />
     </task>
     <servers />
   </component>
@@ -161,7 +157,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -176,13 +171,13 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="635" y="353" key="NewPhpFileDialog/0.0.1600.860@0.0.1600.860" timestamp="1604301542105" />
+    <state x="301" y="74" key="SettingsEditor" timestamp="1604307039563">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="301" y="74" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1604307039563" />
     <state x="507" y="29" width="585" height="801" key="find.popup" timestamp="1604302877816">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="507" y="29" width="585" height="801" key="find.popup/0.0.1600.860@0.0.1600.860" timestamp="1604302877816" />
-    <state x="463" y="180" width="672" height="678" key="search.everywhere.popup" timestamp="1604316816280">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state x="463" y="180" width="672" height="678" key="search.everywhere.popup/0.0.1600.860@0.0.1600.860" timestamp="1604316816280" />
   </component>
 </project>

@@ -32,11 +32,11 @@
             <p>Họ tên người mua *</p>
             <div class="group"><input type="text" name="hoten" placeholder="Họ và tên" required><i class="fa fa-user"></i></div>
             <p>Địa chỉ Email *</p>
-            <div class="group"><input type="text" name="email" placeholder="Địa chỉ Email" required><i class="fa fa-envelope"></i></div>
+            <div class="group"><input type="email" name="email" placeholder="Địa chỉ Email" required><i class="fa fa-envelope"></i></div>
             <p>Mật khẩu *</p>
             <div class="group"><input type="password" name="pass" placeholder="Password" required><i class="fa fa-lock"></i></div>
             <p>Số điện thoại *</p>
-            <div class="group"><input type="text" name="dienthoai" placeholder="Số điện thoại" required><i class="fa fa-phone"></i></div>
+            <div class="group"><input type="number" name="dienthoai" placeholder="Số điện thoại" required><i class="fa fa-phone"></i></div>
             <p>Địa chỉ nhận *</p>
             <div class="group"><input type="text" name="diachi" placeholder="Vui lòng nhập địa chỉ của quý khách!" required><i class="fa fa-building"></i></div>
             <button name="gui" type="submit" class="btn btn-info"> <i class="fa fa-send"></i> Tạo tài khoản</button>
