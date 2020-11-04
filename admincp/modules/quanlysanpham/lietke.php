@@ -71,9 +71,9 @@
 	Trang :
     <?php
 	$sql_trang=mysqli_query($conn,"select * from sanpham");
-	$count_trang=mysqli_num_rows($sql_trang);
-	$a=ceil($count_trang/5);
-	for($b=1;$b<=$a;$b++){
+	$count_sp=mysqli_num_rows($sql_trang);
+	$sotrang=ceil($count_sp/5);
+	for($b=1;$b<=$sotrang;$b++){
 		
 		if($trang==$b){
 		

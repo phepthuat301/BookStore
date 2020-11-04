@@ -35,6 +35,9 @@
                 elseif($tam == 'thanhtoan'){
                     include('thanhtoan.php');
                 }
+                elseif($tam == 'timkiem'){
+                    include('modules/right/timkiem.php');
+                }
 				else{
 					include('modules/right/spmoi.php');
 				}

@@ -33,17 +33,8 @@
 					}elseif(($tam == 'sanpham')&&($tam1 == 'sua')){
 						
 						include('modules/quanlysanpham/sua.php');
-					}elseif(($tam == 'tintuc')&&($tam1 == 'them')){
-						
-						include('modules/quanlytintuc/them.php');
-					}elseif(($tam == 'tintuc')&&($tam1 == 'lietke')){
-						
-						include('modules/quanlytintuc/lietke.php');
-					}elseif(($tam == 'tintuc')&&($tam1 == 'sua')){
-						
-						include('modules/quanlytintuc/sua.php');
 					}elseif(($tam == 'timkiem')&&($tam1 == 'sp')){
-						
+
 						include('modules/timkiem/timkiem.php');
 					}elseif(($tam == 'gallery')&&($tam1 == 'them')){
 						include('modules/gallery/them.php');
@@ -51,7 +42,10 @@
 						include('modules/gallery/lietke.php');
 					}elseif(($tam == 'gallery')&&($tam1 == 'sua')){
 						include('modules/gallery/sua.php');
-
+                    }elseif(($tam == 'thongke')&&($tam1 == 'lietke')){
+                        include('modules/quanlythongke/lietke.php');
+                    }elseif(($tam == 'thongke')&&($tam1 == 'chitiethoadon')){
+                        include('modules/quanlythongke/chitiethoadon.php');
 					}else{
 						include('modules/quanlysanpham/lietke.php');
 					}

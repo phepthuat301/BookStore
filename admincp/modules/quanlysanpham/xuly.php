@@ -29,7 +29,7 @@
 		mysqli_query($conn,$sql_sua);
 		header('location:../../index.php?quanly=sanpham&ac=lietke');
 	}else{
-		$sql_xoa = "delete from sanpham where id_sp = $_GET[id]";
+		$sql_xoa = "delete from sanpham where id_sp = '$_GET[id]'";
 		mysqli_query($conn,$sql_xoa);
 		header('location:../../index.php?quanly=sanpham&ac=lietke');
 	}

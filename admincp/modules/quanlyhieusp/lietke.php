@@ -29,7 +29,8 @@
 	}else{
 		echo 'Hết Hàng';
 	}
-    ?></td>
+    ?>
+    </td>
     <td><a href="index.php?quanly=hieusp&ac=sua&id=<?php echo $dong['id_hieusp'] ?>"><img src="../imgs/pencil.png" width="30" height="30" /></a></td>
     <td><a href="modules/quanlyhieusp/xuly.php?id=<?php echo $dong['id_hieusp']?>" class="delete_link"><img src="../imgs/del.png" width="30" height="30" /></a></td>
   </tr>

@@ -11,7 +11,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5a6c92a2-46b6-42f1-bfec-cdb8bf850220" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/admincp/modules/quanlythongke/chitiethoadon.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admincp/modules/quanlythongke/lietke.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/modules/right/taikhoan.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/right/timkiem.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +45,9 @@
   <component name="PhpWebServerValidation" path_to_validation_script="C:\Users\Admin\Desktop\webphukiendienthoai\webphukiendienthoai" selected_validation_type="LOCAL" web_path_to_validation_script="http://localhost:66342" />
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectId" id="1VJq1KSzK087eLNTsXSa4VEelq9" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -144,7 +149,7 @@
       <workItem from="1602809073342" duration="48000" />
       <workItem from="1603331013640" duration="781000" />
       <workItem from="1604291723671" duration="11124000" />
-      <workItem from="1604307120112" duration="6823000" />
+      <workItem from="1604307120112" duration="26508000" />
     </task>
     <servers />
   </component>
@@ -172,14 +177,18 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="635" y="353" key="NewPhpFileDialog" timestamp="1604301542105">
+    <state x="595" y="152" key="NewPhpClassDialog" timestamp="1604463100281">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="635" y="353" key="NewPhpFileDialog/0.0.1600.860@0.0.1600.860" timestamp="1604301542105" />
-    <state x="507" y="29" width="585" height="801" key="find.popup" timestamp="1604302877816">
+    <state x="595" y="152" key="NewPhpClassDialog/0.0.1600.860@0.0.1600.860" timestamp="1604463100281" />
+    <state x="635" y="353" key="NewPhpFileDialog" timestamp="1604463104784">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="507" y="29" width="585" height="801" key="find.popup/0.0.1600.860@0.0.1600.860" timestamp="1604302877816" />
+    <state x="635" y="353" key="NewPhpFileDialog/0.0.1600.860@0.0.1600.860" timestamp="1604463104784" />
+    <state x="542" y="29" width="585" height="801" key="find.popup" timestamp="1604464287376">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="542" y="29" width="585" height="801" key="find.popup/0.0.1600.860@0.0.1600.860" timestamp="1604464287376" />
     <state x="463" y="180" width="672" height="678" key="search.everywhere.popup" timestamp="1604316816280">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
