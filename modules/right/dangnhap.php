@@ -11,7 +11,7 @@
 		$count=mysqli_num_rows($sql);
 		$result=mysqli_fetch_array($sql);
 		if($count>0){
-			$_SESSION['dangnhap']=$email;
+			$_SESSION['dangnhap']=$result['email'];
             if($result['vaitro'] == 'admin') {
                 echo '<p style="text-align:center;width:auto;padding:30px;background:red;color:#fff;font-size:20px;">XIN CHÀO ADMIN</p>';
                 echo '<a href="admincp/index.php" style="font-size:20px;">ĐẾN TRANG QUẢN LÝ</a>';

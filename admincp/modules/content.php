@@ -8,8 +8,9 @@
 						$tam='';
 					}if(($tam == 'loaisp')&&($tam1 == 'them')){
 						include('modules/quanlyloaisp/them.php');
+
 					}elseif(($tam == 'loaisp')&&($tam1 == 'lietke')){
-						
+
 						include('modules/quanlyloaisp/lietke.php');
 					}elseif(($tam == 'loaisp')&&($tam1 == 'sua')){
 						

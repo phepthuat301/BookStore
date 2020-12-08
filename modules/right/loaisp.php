@@ -2,9 +2,6 @@
 	$sql_loaisp="select * from sanpham where sanpham.id_loaisp='$_GET[id]'";
 	$num_loaisp=mysqli_query($conn,$sql_loaisp);
 	$count=mysqli_num_rows($num_loaisp);
-	
-?>
-<?php
 	$sql_tenloaisp="select tenloaisp from loaisp where id_loaisp='$_GET[id]' ";
 	$row=mysqli_query($conn,$sql_tenloaisp);
 	$dong=mysqli_fetch_array($row);

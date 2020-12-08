@@ -29,8 +29,8 @@
 				}elseif($tam == 'dangxuat'){
 					include('modules/right/dangxuat.php');
 				}
-                elseif($tam == 'tintuc'){
-                    include('chuacode.php');
+                elseif($tam == 'tatcasp'){
+                    include('modules/right/tatcasp.php');
                 }
                 elseif($tam == 'thanhtoan'){
                     include('thanhtoan.php');

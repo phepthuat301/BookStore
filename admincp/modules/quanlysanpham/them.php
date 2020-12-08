@@ -3,21 +3,6 @@
   <a href="index.php?quanly=sanpham&ac=lietke">Liệt kê sp</a> 
 </div>
 <form action="modules/quanlysanpham/xuly.php" method="post" enctype="multipart/form-data">
-<!-- <h3>&nbsp;</h3>
-<table width="600" border="1">
-  <?php
-    $sql_loaisp = "select id_loaisp,tenloaisp from loaisp";
-    $row_loaisp=mysqli_query($conn,$sql_loaisp);
-  ?>
-  <td>Loại sản phẩm</td>
-  <td><select name="loaisp">
-  <?php
-	while($dong_loaisp=mysqli_fetch_array($row_loaisp)){
-	?>
-    	<option value="<?php echo $dong_loaisp['id_loaisp'] ?>"><?php echo $dong_loaisp['tenloaisp'] ?></option>
-        <?php
-	}
-  ?>
 </select></td>
 </tr>-->
 <h3>Thêm sản phẩm</h3>

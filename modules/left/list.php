@@ -40,7 +40,7 @@
             	<h3>Sách Nên Mua</h3>
             		</div>
                     <?php
-					$sql_banchay=mysqli_query($conn,"select * from sanpham order by id_sp desc limit 8");
+					$sql_banchay=mysqli_query($conn,"select * from sanpham order by id_sp desc limit 5");
 					
 					?>
             	<ul class="hangbanchay">	

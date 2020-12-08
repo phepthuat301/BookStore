@@ -85,6 +85,7 @@ CREATE TABLE `gallery` (
   PRIMARY KEY (`id_gallery`),
   KEY `id_sp_idx` (`id_sp`),
   CONSTRAINT `id_sp` FOREIGN KEY (`id_sp`) REFERENCES `sanpham` (`id_sp`)
+  ON DELETE CASCADE 
 ) ENGINE=InnoDB AUTO_INCREMENT=109 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
