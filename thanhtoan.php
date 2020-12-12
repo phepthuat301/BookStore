@@ -1,7 +1,27 @@
 <?php
-	$name=$_SESSION['dangnhap'];
-	$insert_cart="insert into cart (name) value ('".$name."')";
-	$ketqua=mysqli_query($conn,$insert_cart);
+	if(isset($_POST['gui'])) {
+		$tenkh = $_POST['hoten'];
+		$email = $_POST['email'];
+		$diachi = $_POST['diachi'];
+		$pass = md5($_POST['pass']);
+		$dienthoai = $_POST['dienthoai'];
+		$vaitro = 'khachhang';
+		$loaithanhtoan = $_POST['thanhtoan'];
+		$sql_dangky = mysqli_query($conn, "insert into user (username,email,matkhau,dienthoai,diachinhan,vaitro)
+			  value('$tenkh','$email','$pass','$dienthoai','$diachi','$vaitro')");
+		$insert_cart="insert into cart (name,loaithanhtoan,diachinhan,sdt) value ('$tenkh','$loaithanhtoan','$diachi','$dienthoai')";
+		$ketqua=mysqli_query($conn,$insert_cart);
+	}else{
+		$email = $_SESSION['dangnhap'];
+		$sql = mysqli_query($conn,"select * from user where email ='$email'");
+		$result = mysqli_fetch_array($sql);
+		$tenkh = $result['username'];
+		$diachi = $_POST['diachi'];
+		$dienthoai = $_POST['dienthoai'];
+		$loaithanhtoan = $_POST['thanhtoan'];
+		$insert_cart="insert into cart (name,loaithanhtoan,diachinhan,sdt) value ('$tenkh','$loaithanhtoan','$diachi','$dienthoai')";
+		$ketqua=mysqli_query($conn,$insert_cart);
+	}
 	if($ketqua){
 		for($i=0;$i<count($_SESSION['product']);$i++){
 			$max=mysqli_query($conn,"select max(id_cart) from cart");

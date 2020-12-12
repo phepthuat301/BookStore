@@ -38,6 +38,7 @@ if(isset($_SESSION['product'])){
         echo '<tr>';
         echo'</tr>';
     }
+    $thanhtien = $_SESSION['thanhtien'];
     echo '<tr>
 				<td colspan="6">
 				<a href="update_cart.php?xoatoanbo=1"  style="text-decoration:none;" >Xóa toàn bộ</a>	
@@ -55,19 +56,10 @@ echo'</table>';
     <p><a href="?quanly=dangkymoi">Đăng ký mới</a></p>
     <p><a href="?quanly=dangnhap">Bạn đã có tài khoản</a></p>
     <?php
-    if(!isset($_SESSION['dangnhap'])&&isset($_SESSION['product'])){
+    if(isset($_SESSION['product'])){
         ?>
         <p style="float:right; background:#FF0;text-decoration:none;">
-            <a href="?quanly=dangnhap" style="color:#000;margin:5px;">Vui lòng đăng nhập để thanh toán</a>
-        </p>
-        <?php
-    }
-    ?>
-    <?php
-    if(isset($_SESSION['dangnhap'])&&isset($_SESSION['product'])){
-        ?>
-        <p style="float:right; background:#FF0;text-decoration:none;">
-            <a href="?quanly=thanhtoan" style="color:#000;margin:5px;">Thanh toán</a>
+            <a href="?quanly=thongtinkh" style="color:#000;margin:5px;">Thanh toán</a>
         </p>
         <?php
     }

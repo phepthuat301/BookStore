@@ -38,6 +38,9 @@
                 elseif($tam == 'timkiem'){
                     include('modules/right/timkiem.php');
                 }
+				elseif($tam == 'thongtinkh'){
+				    include('modules/right/thongtinKH.php');
+                }
 				else{
 					include('modules/right/spmoi.php');
 				}

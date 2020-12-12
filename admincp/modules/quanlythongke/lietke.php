@@ -18,7 +18,11 @@ $row_lietketk=mysqli_query($conn,$sql_lietketk);
     <tr>
         <th scope="col">ID</th>
         <th scope="col">Ngày mua</th>
-        <th scope="col">Email</th>
+        <th scope="col">Email or Họ Tên</th>
+        <th scope="col">Loại thanh toán</th>
+        <th scope="col">Địa chỉ nhận</th>
+        <th scope="col">SĐT nhận</th>
+        <th scope="col">Tình trạng</th>
     </tr>
     <?php
     $i=1;
@@ -29,6 +33,9 @@ $row_lietketk=mysqli_query($conn,$sql_lietketk);
             <td><?php  echo $i;?></td>
             <td><a href="index.php?quanly=thongke&ac=chitiethoadon&id=<?php echo $result['id_cart'] ?>"><?php echo $result['createdate'] ?></a></td>
             <td><?php echo $result['name'] ?></td>
+            <td><?php echo $result['loaithanhtoan'] ?></td>
+            <td><?php echo $result['diachinhan'] ?></td>
+            <td><?php echo $result['sdt'] ?></td>
         </tr>
         <?php
         $i++;

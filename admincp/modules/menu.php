@@ -1,7 +1,7 @@
 <?php
 	if(isset($_POST['logout'])){
 		unset($_SESSION['dangnhap']);
-		header('location:/BookStore/index.php');
+		header('location:http://localhost/');
 	}
 ?>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">

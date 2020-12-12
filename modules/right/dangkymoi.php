@@ -27,7 +27,7 @@
 </div>
 <div class="dangky">
     <p style="font-size:18px; color:red;margin:5px;">Các mục dấu * là bắt buộc tối thiểu. Vui lòng điền đầy đủ và chính xác (Số nhà, Ngõ, thôn xóm/ấp, Phường/xã, huyện/quận, tỉnh, TP)</p>
-    <form action="" method="post" enctype="multipart/form-data">
+    <form action="" method="post" autocomplete="on">
         <div class="form">
             <p>Họ tên người mua *</p>
             <div class="group"><input type="text" name="hoten" placeholder="Họ và tên" required><i class="fa fa-user"></i></div>

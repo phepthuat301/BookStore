@@ -20,7 +20,10 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -32,17 +35,39 @@
       <option name="presentableId" value="Default" />
       <updated>1607332190681</updated>
       <workItem from="1607332224502" duration="18877000" />
+      <workItem from="1607665223855" duration="1798000" />
+      <workItem from="1607667033135" duration="1091000" />
+      <workItem from="1607696356214" duration="1343000" />
+      <workItem from="1607744645384" duration="1801000" />
+      <workItem from="1607746459556" duration="1468000" />
+      <workItem from="1607748267454" duration="1799000" />
+      <workItem from="1607757217247" duration="1797000" />
+      <workItem from="1607759056996" duration="2110000" />
+      <workItem from="1607775266909" duration="329000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="635" y="373" key="NewPhpFileDialog" timestamp="1607352464107">
-      <screen x="0" y="0" width="1600" height="900" />
+    <state x="762" y="431" key="NewPhpFileDialog" timestamp="1607665578304">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="635" y="373" key="NewPhpFileDialog/0.0.1600.900@0.0.1600.900" timestamp="1607352464107" />
+    <state x="762" y="431" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1607665578304" />
+    <state x="461" y="165" key="SettingsEditor" timestamp="1607775283734">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1607775283734" />
+    <state x="667" y="119" width="585" height="801" key="find.popup" timestamp="1607696845027">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="667" y="119" width="585" height="801" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1607696845027" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1607667078407">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1607667078407" />
     <state x="463" y="190" width="672" height="678" key="search.everywhere.popup" timestamp="1607334919896">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
