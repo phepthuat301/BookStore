@@ -1,5 +1,5 @@
 <?php
-	$sql_loai="select * from loaisp order by id_loaisp asc";
+	$sql_loai="select * from loaisp where tinhtrang='1' order by id_loaisp asc";
 	$row_loai=mysqli_query($conn,$sql_loai)
 ?>
 <div class="box_list">
@@ -17,7 +17,7 @@
                 </ul>
                 </div>
                <?php
-	$sql_hieu="select * from hieusp order by id_hieusp asc";
+	$sql_hieu="select * from hieusp where tinhtrang='1' order by id_hieusp asc";
 	$row_hieu=mysqli_query($conn,$sql_hieu);
 ?>
                 <div class="box_list">
@@ -37,10 +37,10 @@
                  <div class="box_list">
                  
                    <div class="tieude">
-            	<h3>Sách Nên Mua</h3>
+            	        <h3>Sách Nên Mua</h3>
             		</div>
                     <?php
-					$sql_banchay=mysqli_query($conn,"select * from sanpham order by id_sp desc limit 5");
+					$sql_banchay=mysqli_query($conn,"select * from sanpham where tinhtrang ='1' order by id_sp desc limit 5");
 					
 					?>
             	<ul class="hangbanchay">	

@@ -4,12 +4,10 @@
 </div>
 <form action="modules/quanlysanpham/xuly.php" method="post" enctype="multipart/form-data">
 </select></td>
-</tr>-->
+</tr>
 <h3>Thêm sản phẩm</h3>
 <p>Tên sản phẩm</p>
 <input size="100%" type="text" name="tensp" placeholder="  Nhập tên sản phẩm" required>
-<p>Mã sản phẩm</p>
-<input size="100%" type="text" name="masp" placeholder="  Vui lòng nhập mã sản phẩm" required>
 <p>Hình ảnh</p>
 <input type="file" name="hinhanh" required/>
 <p>Giá đề xuất</p>
@@ -50,8 +48,8 @@
     </select>
     <p>Tình trạng</p>
   <select name="tinhtrang" class="select-box">
-    <option value="1">Còn Hàng</option>
-    <option value="2">Hết Hàng</option>
+    <option value="1">Kích hoạt</option>
+    <option value="2">Không kích hoạt</option>
   </select><br>
     <button name="them" type="submit" class="btn btn-success text-dark"> <i class="fa fa-send"></i> Thêm danh mục</button>
 </form>

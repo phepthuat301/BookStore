@@ -1,5 +1,5 @@
 ﻿	<?php
-	$sql_moinhat="select * from sanpham order by id_sp desc limit 0,3";
+	$sql_moinhat="select * from sanpham where tinhtrang ='1' order by id_sp desc limit 0,3";
 	$row_moinhat=mysqli_query($conn,$sql_moinhat);
 	
 ?>
@@ -23,10 +23,8 @@
                  <div class="clear"></div>
                  
  <?php
- 	$sql_loai=mysqli_query($conn,"select * from loaisp limit 4 ");
-	
+ 	$sql_loai=mysqli_query($conn,"select * from loaisp where tinhtrang = '1' limit 4 ");
 	while($dong_loai=mysqli_fetch_array($sql_loai)){
-		
 	echo '<div class="tieude">'.$dong_loai['tenloaisp'].'</div>';
  	$sql_loaisp="select * from loaisp inner join sanpham on sanpham.id_loaisp=loaisp.id_loaisp where sanpham.id_loaisp='".$dong_loai['id_loaisp']."' limit 6";
 	$row=mysqli_query($conn,$sql_loaisp);

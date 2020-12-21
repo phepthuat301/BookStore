@@ -9,9 +9,9 @@ if(isset($_SESSION['dangnhap'])){
         <div class="tieude">Địa chỉ & SĐT Người Nhận</div>
             <div class="dangky">
                 <p>Địa chỉ nhận</p>
-                <div class="group"><input type="text" name="diachi" placeholder="<?php echo $result['diachinhan'] ?>"></div>
+                <div class="group"><input type="text" name="diachi" value="<?php echo $result['diachinhan'] ?>"></div>
                 <p>Số điện thoại</p>
-                <div class="group"><input type="number" name="dienthoai" placeholder="<?php echo $result['dienthoai'] ?>" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}"></div>
+                <div class="group"><input type="tel" name="dienthoai" value="<?php echo $result['dienthoai'] ?>" pattern="{10}"></div>
             </div>
             <div class="tieude">Phương thức thanh toán</div>
             <div class="radiokh" style="margin:10px 10px; padding:5px; font-size: 20px">
@@ -38,7 +38,7 @@ if(isset($_SESSION['dangnhap'])){
             <p>Mật khẩu</p>
             <div class="group"><input type="password" name="pass" placeholder="Password" required><i class="fa fa-lock"></i></div>
             <p>Số điện thoại</p>
-            <div class="group"><input type="number" name="dienthoai" placeholder="0905-123-456" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" required><i class="fa fa-phone"></i></div>
+            <div class="group"><input type="tel" name="dienthoai" placeholder="0905123456" pattern="{10}" required><i class="fa fa-phone"></i></div>
             <p>Địa chỉ nhận</p>
             <div class="group"><input type="text" name="diachi" placeholder="Vui lòng nhập địa chỉ của quý khách!" required><i class="fa fa-building"></i></div>
             </div>

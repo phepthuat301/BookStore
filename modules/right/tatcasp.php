@@ -9,7 +9,7 @@ if($trang =='' || $trang =='1'){
 }else{
     $trang1=($trang*15)-15;
 }
-$sql="select * from sanpham limit $trang1,15";
+$sql="select * from sanpham where tinhtrang='1' limit $trang1,15";
 $row_tatca=mysqli_query($conn,$sql);
 ?>
 <div class="tieude">Tất cả sản phẩm</div>

@@ -1,8 +1,10 @@
 <?php
 
-$sql="select * from sanpham where id_sp='$_GET[id]'";
+$sql="select * from sanpham,hieusp,loaisp where sanpham.id_loaisp=loaisp.id_loaisp and sanpham.id_hieusp=hieusp.id_hieusp and id_sp='$_GET[id]'";
 $num=mysqli_query($conn,$sql);
 $dong=mysqli_fetch_array($num);
+$num1=mysqli_query($conn,$sql);
+$dong1=mysqli_fetch_array($num1);
 if(isset($_POST['add_to_cart'])){
     $id=$_GET['id'];
     $soluong=$_POST['soluong'];
@@ -51,9 +53,10 @@ if(isset($_POST['add_to_cart'])){
         ?>
     </div>
     <div class="box_info">
-        <form action="#" method="post" enctype="multipart/form-data">
-            <p><strong>Tên sản phẫm: </strong><em style="color:red; font-size:1.5em"><?php echo $dong['tensp'] ?></em></p>
-            <p><strong>Mã sản phẩm:</strong>  <?php echo $dong['masp'] ?> </p>
+        <form action="" method="post" enctype="multipart/form-data">
+            <p><strong>Tên Sách: </strong><em style="color:red; font-size:1.5em"><?php echo $dong['tensp'] ?></em></p>
+            <p><strong>Nhà Xuất Bản:</strong>  <?php echo $dong1['tenhieusp'] ?> </p>
+            <p><strong>Loại Sách:</strong>  <?php echo $dong1['tenloaisp'] ?> </p>
             <p><strong>Giá bán:</strong><span style="color:red;"> <?php echo number_format($dong['giadexuat']).' '.'VNĐ'?></span></p>
             <p style="color:blue;"><strong> Tình trạng:</strong> Còn hàng(<?php echo ($dong['soluong']) ?>) </p>
             <p><strong>Số lượng:</strong><input type="number" name="soluong" min="1" value="1" style="width:50px;"/></p>

@@ -18,10 +18,6 @@
     <td><input size="100%" type="text" name="tensp" value="<?php echo $dong['tensp'] ?>"></td>
   </tr>
   <tr>
-    <td>Mã SP</td>
-    <td><input type="text" name="masp" value="<?php echo $dong['masp'] ?>"></td>
-  </tr>
-  <tr>
     <td>Hình ảnh</td>
     <td><input type="file" name="hinhanh" /><img src="modules/quanlysanpham/uploads/<?php echo $dong['hinhanh'] ?>" width="80" height="80"></td>
   </tr>
@@ -88,7 +84,6 @@
   <tr>
     <td>Tình trạng</td>
     <td><select name="tinhtrang">
-   
     <option value="1">Kích hoạt</option>
      <option value="2">Không kích hoạt</option>
     </select></td>

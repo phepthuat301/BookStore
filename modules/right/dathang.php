@@ -8,8 +8,7 @@ if(isset($_SESSION['product'])){
     echo '<div class="box_giohang">';
     echo '  <table width="100%" border="1" style="border-collapse:collapse; margin:5px; text-align:center;">';
     echo'  <tr>';
-    echo '<th>MÃ SP</th>';
-    echo'<th>Tên SP</th>';
+    echo'<th>Nhà Xuất bản</th>';
     echo'<th>Hình ảnh</th>';
     echo'<th>Giá sp</th>';
     echo'<th>SL</th>';
@@ -23,7 +22,6 @@ if(isset($_SESSION['product'])){
         $row=mysqli_query($conn,$sql);
         $dong=mysqli_fetch_array($row);
         echo'<tr>';
-        echo'<td>'.$dong['masp'].'</td>';
         echo'<td>'.$dong['tensp'].'</td>';
         echo'<td><img src="admincp/modules/quanlysanpham/uploads/'.$dong['hinhanh'].'" width="100" height="100" /></td>';
         echo'<td>'.number_format($dong['giadexuat']).'</td>';
@@ -37,8 +35,7 @@ if(isset($_SESSION['product'])){
         echo'</tr>';
         echo '<tr>';
         echo'</tr>';
-    }
-    $thanhtien = $_SESSION['thanhtien'];
+    }   
     echo '<tr>
 				<td colspan="6">
 				<a href="update_cart.php?xoatoanbo=1"  style="text-decoration:none;" >Xóa toàn bộ</a>	

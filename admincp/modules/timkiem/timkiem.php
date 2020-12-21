@@ -14,14 +14,12 @@
   <tr>
       <th scope="col">ID</th>
       <th scope="col">Tên sản phẩm</th>
-      <th scope="col">Mã sp</th>
       <th scope="col">Hình ảnh</th>
       <th scope="col">Giá đề xuất</th>
       <th scope="col">Giá giảm</th>
       <th scope="col">Số lượng</th>
       <th scope="col">Loại hàng</th>
       <th scope="col">Nhà SX</th>
-      <th scope="col">Tình trạng</th>
       <th scope="col">Quản lý</th>
   </tr>
   <?php
@@ -31,7 +29,6 @@
   <tr>
     <td><?php  echo $i;?></td>
     <td><?php echo $dong['tensp'] ?></td>
-    <td><?php echo $dong['masp'] ?></td>
     <td><img src="modules/quanlysanpham/uploads/<?php echo $dong['hinhanh'] ?>" width="80" height="80" /></td>
     <td><?php echo $dong['giadexuat'] ?></td>
     <td><?php echo $dong['giagiam'] ?></td>

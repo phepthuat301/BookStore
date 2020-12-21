@@ -24,12 +24,13 @@
     <td><?php  echo $i;?></td>
     <td><?php echo $dong['tenloaisp'] ?></td>
     <td><?php
-	if($dong['tinhtrang'] == 1 ){
-		echo 'Còn Hàng';
-	}else{
-		echo 'Hết Hàng';
-	}
-    ?></td>
+          if($dong['tinhtrang'] == 1 ){
+              echo 'Kích hoạt';
+          }else{
+              echo 'Không kích hoạt';
+          }
+          ?>
+    </td>
     <td><a href="index.php?quanly=loaisp&ac=sua&id=<?php echo $dong['id_loaisp'] ?>"><img src="../imgs/pencil.png" width="30" height="30" /></a></td>
     <td><a href="modules/quanlyloaisp/xuly.php?id=<?php echo $dong['id_loaisp']?>" class="delete_link"><img src="../imgs/del.png" width="30" height="30" /></a></td>
   </tr>

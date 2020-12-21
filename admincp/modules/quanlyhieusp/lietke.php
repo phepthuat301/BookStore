@@ -25,9 +25,9 @@
     <td><?php echo $dong['tenhieusp'] ?></td>
     <td><?php
 	if($dong['tinhtrang'] == 1 ){
-		echo 'Còn Hàng';
+		echo 'Kích hoạt';
 	}else{
-		echo 'Hết Hàng';
+		echo 'Không kích hoạt';
 	}
     ?>
     </td>

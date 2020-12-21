@@ -10,7 +10,7 @@
 	}else{
 		$trang1=($trang*5)-5;
 	}
-	$sql_lietkesp="select * from sanpham,hieusp,loaisp where loaisp.id_loaisp=sanpham.id_loaisp and hieusp.id_hieusp=sanpham.id_hieusp order by sanpham.id_sp desc limit $trang1,5 ";
+	$sql_lietkesp="select id_sp,hinhanh,tensp,giadexuat,giagiam,soluong,tenloaisp,tenhieusp,sanpham.tinhtrang from sanpham,hieusp,loaisp where loaisp.id_loaisp=sanpham.id_loaisp and hieusp.id_hieusp=sanpham.id_hieusp order by sanpham.id_sp desc limit $trang1,5 ";
 	$row_lietkesp=mysqli_query($conn,$sql_lietkesp);
 
 ?>
@@ -22,7 +22,6 @@
   <tr>
       <th scope="col">ID</th>
       <th scope="col">Tên sản phẩm</th>
-      <th scope="col">Mã sp</th>
       <th scope="col">Hình ảnh</th>
       <th scope="col">Giá đề xuất</th>
       <th scope="col">Giá giảm</th>
@@ -41,7 +40,6 @@
   	
     <td><?php  echo $i;?></td>
     <td><?php echo $dong['tensp'] ?></td>
-    <td><?php echo $dong['masp'] ?></td>
     <td><img src="modules/quanlysanpham/uploads/<?php echo $dong['hinhanh'] ?>" width="80" height="80" />
     <a href="index.php?quanly=gallery&ac=lietke&id=<?php echo $dong['id_sp'] ?>" style="text-align:center;text-decoration:none; font-size:18px;color:#06F;">Gallery</a>
     </td>
@@ -50,15 +48,9 @@
     <td><?php echo $dong['soluong'] ?></td>
     <td><?php echo $dong['tenloaisp'] ?></td>
     <td><?php echo $dong['tenhieusp'] ?></td>
-    <td><?php $sql_tinhtrang = "select tinhtrang from sanpham";
-	$row_tinhtrang = mysqli_query($conn,$sql_tinhtrang);
-	$dong_tinhtrang=mysqli_fetch_array($row_tinhtrang);
-	if($dong_tinhtrang['tinhtrang'] == 1 ){
-		echo 'Còn Hàng';
-	}elseif($dong_tinhtrang['tinhtrang'] == 2){
-		echo 'Hết Hàng';
-	}
-    ?></td>
+    <td><?php if($dong['tinhtrang']==1){
+        echo "Kích hoạt";
+        }else echo "Không kích hoạt"?></td>
     <td><a href="index.php?quanly=sanpham&ac=sua&id=<?php echo $dong['id_sp'] ?>" ><img src="../imgs/pencil.png" width="30" height="30" /></a></td>
     <td><a href="modules/quanlysanpham/xuly.php?id=<?php echo $dong['id_sp']?>" class="delete_link"><img src="../imgs/del.png" width="30" height="30"   /></a></td>
   </tr>
