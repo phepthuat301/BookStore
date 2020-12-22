@@ -31,7 +31,7 @@ if(isset($_SESSION['dangnhap'])){
             <li><a href="admincp/index.php">Quản Lý</a></li>
             <li><a href="?quanly=dangxuat">Đăng Xuất</a></li>
             <li><form action="index.php?quanly=timkiem" method="post">
-                    <input style="padding: 6px 10px;border: none;cursor: pointer;" type="text" placeholder="Tìm..." name="value">
+                    <input style="padding: 6px 10px;border: none;cursor: pointer;" type="text" placeholder="Tìm..." name="value" required>
                     <button style="border: none;border-radius: 5px;padding: 6px 10px;cursor: pointer" type="submit" name="timkiem">Search</button>
                 </form>
             </li>
@@ -49,7 +49,7 @@ else {
         <li><a href="?quanly=dangnhap">Đăng Nhập</a></li>
         <li><a href="?quanly=dangkymoi">Đăng Ký</a></li>
         <li><form action="index.php?quanly=timkiem" method="post">
-                <input style="padding: 6px 10px;border: none;cursor: pointer;" type="text" placeholder="Tìm..." name="value">
+                <input style="padding: 6px 10px;border: none;cursor: pointer;" type="text" placeholder="Tìm..." name="value" required>
                 <button style="border: none;border-radius: 5px;padding: 6px 10px;cursor: pointer" type="submit" name="timkiem">Search</button>
             </form>
         </li>

@@ -58,7 +58,14 @@ if(isset($_POST['add_to_cart'])){
             <p><strong>Nhà Xuất Bản:</strong>  <?php echo $dong1['tenhieusp'] ?> </p>
             <p><strong>Loại Sách:</strong>  <?php echo $dong1['tenloaisp'] ?> </p>
             <p><strong>Giá bán:</strong><span style="color:red;"> <?php echo number_format($dong['giadexuat']).' '.'VNĐ'?></span></p>
-            <p style="color:blue;"><strong> Tình trạng:</strong> Còn hàng(<?php echo ($dong['soluong']) ?>) </p>
+            <p style="color:blue;"><strong> Tình trạng:</strong> <?php
+                $tonkho = $dong['soluong'];
+                if ( $tonkho <= 0) {
+                    echo "Hết hàng";
+                }
+                else{
+                    echo "Còn hàng($tonkho)";
+                } ?> </p>
             <p><strong>Số lượng:</strong><input type="number" name="soluong" min="1" value="1" style="width:50px;"/></p>
             <input type="submit" name="add_to_cart" value="Mua Hàng" style="margin:10px;width:100px;height:40px;background: #5fafdb;color: #fff;font-size:18px;border-radius: 8px;border: 2px solid white;">
 

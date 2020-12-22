@@ -25,7 +25,7 @@
 
 		}
 		else{
-			echo '<p style="text-align:center;width:auto;padding:30px;background:red;color:#fff;font-size:20px;">Email và Tài khoản bị sai</p>';
+			echo '<p style="text-align:center;width:auto;padding:30px;background:red;color:#fff;font-size:20px;">Email hoặc Mật khẩu bị sai</p>';
 		}
 	}
 

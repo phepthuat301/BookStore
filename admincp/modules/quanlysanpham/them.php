@@ -11,13 +11,13 @@
 <p>Hình ảnh</p>
 <input type="file" name="hinhanh" required/>
 <p>Giá đề xuất</p>
-<input size="100%"  type="text" name="giadexuat" placeholder="  Vui lòng nhập giá cần bán" required>
+<input size="100%"  type="number" name="giadexuat" placeholder="  Vui lòng nhập giá cần bán" required>
 <p>Giá giảm</p>
-<input size="100%"  type="text" name="giagiam" placeholder="  Vui lòng nhập giá muốn giảm" required>
+<input size="100%"  type="number" name="giagiam" placeholder="  Vui lòng nhập giá muốn giảm" required>
 <p>Nội dung</p>
 <textarea style="width:30%;height:100px" name="noidung"></textarea>
 <p>Số lượng</p>
-<input type="text" name="soluong" placeholder="  Vui lòng nhập số lượng" required>
+<input type="number" maxlength="4" name="soluong" placeholder="  Vui lòng nhập số lượng" required>
 <?php
   $sql_loaisp = "select id_loaisp,tenloaisp from loaisp";
   $row_loaisp=mysqli_query($conn,$sql_loaisp);
