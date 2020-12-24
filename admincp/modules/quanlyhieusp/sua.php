@@ -14,7 +14,7 @@
   </tr>
   <tr>
     <td width="97">Tên loại sp</td>
-    <td width="87"><input type="text" name="hieusp" value="<?php echo $dong['tenhieusp'] ?>"></td>
+    <td width="87"><input type="text" name="hieusp" value="<?php echo $dong['tenhieusp'] ?>" required></td>
   </tr>
   <tr>
     <td>Tình trạng</td>

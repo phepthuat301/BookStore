@@ -15,19 +15,19 @@
   </tr>
   <tr>
     <td>Tên sản phẫm</td>
-    <td><input size="100%" type="text" name="tensp" value="<?php echo $dong['tensp'] ?>"></td>
+    <td><input size="100%" type="text" name="tensp" value="<?php echo $dong['tensp'] ?>" required></td>
   </tr>
   <tr>
     <td>Hình ảnh</td>
-    <td><input type="file" name="hinhanh" /><img src="modules/quanlysanpham/uploads/<?php echo $dong['hinhanh'] ?>" width="80" height="80"></td>
+    <td><input type="file" name="hinhanh" accept="image/*" /><img src="modules/quanlysanpham/uploads/<?php echo $dong['hinhanh'] ?>"  width="80" height="80"></td>
   </tr>
   <tr>
     <td>Giá đề xuất</td>
-    <td><input type="text" name="giadexuat" value="<?php echo $dong['giadexuat'] ?>"></td>
+    <td><input type="text" name="giadexuat" value="<?php echo $dong['giadexuat'] ?>" min="1" required></td>
   </tr>
   <tr>
     <td>Giá giảm</td>
-    <td><input type="text" name="giagiam" value="<?php echo $dong['giagiam'] ?>"></td>
+    <td><input type="text" name="giagiam" value="<?php echo $dong['giagiam'] ?>" min="1" required></td>
   </tr>
   <tr>
     <td>Nội dung</td>
@@ -35,7 +35,7 @@
   </tr>
   <tr>
     <td>Số lượng</td>
-    <td><input type="text" name="soluong" value="<?php echo $dong['soluong'] ?>"></td>
+    <td><input type="text" name="soluong" value="<?php echo $dong['soluong'] ?>" min="1" required></td>
   </tr>
   <tr>
   <?php
@@ -84,8 +84,19 @@
   <tr>
     <td>Tình trạng</td>
     <td><select name="tinhtrang">
-    <option value="1">Kích hoạt</option>
-     <option value="2">Không kích hoạt</option>
+            <?php
+            if($dong['tinhtrang'] == 1){
+                ?>
+                <option value="1" selected="selected">Kích hoạt</option>
+                <option value="2">Không kích hoạt</option>
+                <?php
+            }else{
+                ?>
+                <option value="1">Kích hoạt</option>
+                <option value="2" selected="selected">Không kích hoạt</option>
+                <?php
+            }
+            ?>
     </select></td>
   </tr>
   <tr>

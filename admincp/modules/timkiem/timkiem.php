@@ -2,11 +2,16 @@
 <?php
 	if(isset($_POST['timkiem'])){
 	$search=$_POST['masp'];
-	echo 'Tên tìm kiếm :<strong>'.' '.$search.'</strong><br/>';
-	$sql_timkiem="select * from sanpham,hieusp,loaisp where sanpham.id_loaisp=loaisp.id_loaisp and sanpham.id_hieusp=hieusp.id_hieusp and tensp like '%".$search."%'";
+    $delspace = trim($search);
+	echo 'Tên tìm kiếm :<strong>'.' '.$delspace.'</strong><br/>';
+	if(empty($delspace)){
+	    echo "Vui lòng nhập đúng tên sách";
+    }else {
+	$sql_timkiem="select * from sanpham,hieusp,loaisp where sanpham.id_loaisp=loaisp.id_loaisp and sanpham.id_hieusp=hieusp.id_hieusp and tensp like '%".$delspace."%'";
 	$row_timkiem=mysqli_query($conn,$sql_timkiem);
 	$count=mysqli_num_rows($row_timkiem);
-	if($count>0){
+	if($count>0)
+	{
 ?>
 <h3>Kết quả tìm kiếm</h3>
 
@@ -43,6 +48,7 @@
   }
 	}else{
 	  echo 'Không tìm thấy kết quả';
+  }
   }
   }
   ?>

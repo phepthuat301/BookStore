@@ -11,7 +11,7 @@ if(isset($_SESSION['dangnhap'])){
                 <p>Địa chỉ nhận</p>
                 <div class="group"><input type="text" name="diachi" value="<?php echo $result['diachinhan'] ?>"></div>
                 <p>Số điện thoại</p>
-                <div class="group"><input type="tel" name="dienthoai" value="<?php echo $result['dienthoai'] ?>" pattern="{10}"></div>
+                <div class="group"><input type="tel" name="dienthoai" value="<?php echo $result['dienthoai'] ?>" pattern="[0-9]{10}" title="Vui lòng nhập đúng 10 số"></div>
             </div>
             <div class="tieude">Phương thức thanh toán</div>
             <div class="radiokh" style="margin:10px 10px; padding:5px; font-size: 20px">
@@ -31,16 +31,16 @@ if(isset($_SESSION['dangnhap'])){
             <div class="tieude">Địa chỉ Giao Hàng & Đăng Ký</div>
             <br>
             <div class="dangky">
-            <p>Họ tên người mua</p>
-            <div class="group"><input type="text" name="hoten" placeholder="Họ và tên" required><i class="fa fa-user"></i></div>
-            <p>Địa chỉ Email</p>
-            <div class="group"><input type="email" name="email" placeholder="Địa chỉ Email" required><i class="fa fa-envelope"></i></div>
-            <p>Mật khẩu</p>
-            <div class="group"><input type="password" name="pass" placeholder="Password" required><i class="fa fa-lock"></i></div>
-            <p>Số điện thoại</p>
-            <div class="group"><input type="tel" name="dienthoai" placeholder="0905123456" pattern="{10}" required><i class="fa fa-phone"></i></div>
-            <p>Địa chỉ nhận</p>
-            <div class="group"><input type="text" name="diachi" placeholder="Vui lòng nhập địa chỉ của quý khách!" required><i class="fa fa-building"></i></div>
+                <p>Họ tên người mua *</p>
+                <div class="group"><input type="text" name="hoten" placeholder="Họ và tên" required><i class="fa fa-user"></i></div>
+                <p>Địa chỉ Email *</p>
+                <div class="group"><input type="email" name="email" placeholder="Địa chỉ Email" required><i class="fa fa-envelope"></i></div>
+                <p>Mật khẩu *</p>
+                <div class="group"><input type="password" name="pass" placeholder="Tối thiểu 8 kí tự" pattern="[A-Za-z0-9]{8,}" title="Vui lòng nhập tối thiếu 8 kí tự chỉ gồm chữ và số" required><i class="fa fa-lock"></i></div>
+                <p>Số điện thoại *</p>
+                <div class="group"><input type="tel" name="dienthoai" placeholder="0905123456" pattern="[0-9]{10}" title="Vui lòng nhập đúng 10 số" required><i class="fa fa-phone"></i></div>
+                <p>Địa chỉ nhận *</p>
+                <div class="group"><input type="text" name="diachi" placeholder="Vui lòng nhập địa chỉ của quý khách!" required><i class="fa fa-building"></i></div>
             </div>
             <div class="tieude">Phương thức thanh toán</div>
             <div class="radiokh" style="margin:10px 10px; padding:5px; font-size: 20px">

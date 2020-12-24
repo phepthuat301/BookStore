@@ -38,9 +38,9 @@
             <p>Địa chỉ Email *</p>
             <div class="group"><input type="email" name="email" placeholder="Địa chỉ Email" required><i class="fa fa-envelope"></i></div>
             <p>Mật khẩu *</p>
-            <div class="group"><input type="password" name="pass" placeholder="Tối thiểu 8 kí tự" pattern="{8,}" required><i class="fa fa-lock"></i></div>
+            <div class="group"><input type="password" name="pass" placeholder="Tối thiểu 8 kí tự" pattern="[A-Za-z0-9]{8,}" title="Vui lòng nhập tối thiếu 8 kí tự chỉ gồm chữ và số" required><i class="fa fa-lock"></i></div>
             <p>Số điện thoại *</p>
-            <div class="group"><input type="tel" name="dienthoai" placeholder="0905123456" pattern="{10}" required><i class="fa fa-phone"></i></div>
+            <div class="group"><input type="tel" name="dienthoai" placeholder="0905123456" pattern="[0-9]{10}" title="Vui lòng nhập đúng 10 số" required><i class="fa fa-phone"></i></div>
             <p>Địa chỉ nhận *</p>
             <div class="group"><input type="text" name="diachi" placeholder="Vui lòng nhập địa chỉ của quý khách!" required><i class="fa fa-building"></i></div>
             <button name="gui" type="submit" class="btn btn-info"> <i class="fa fa-send"></i> Tạo tài khoản</button>

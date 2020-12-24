@@ -14,7 +14,7 @@
   </tr>
   <tr>
     <td>Tên loại sp</td>
-    <td><input type="text" name="loaisp" value="<?php echo $dong['tenloaisp'] ?>"></td>
+    <td><input type="text" name="loaisp" value="<?php echo $dong['tenloaisp'] ?>" required></td>
   </tr>
   <tr>
     <td>Tình trạng</td>
